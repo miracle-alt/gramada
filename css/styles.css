@@ -1,3 +1,71 @@
-body {
-  color: #ffffff;
+:root {
+  --primary-text-color: rgba(0, 0, 0, 0.8);
+  --title-text-color: #000;
+  --accent-color: #18a0fb;
+  --primary-bg-color: #fff;
 }
+body {
+  background-color: rgb(27, 240, 169);
+  color: var(--primary-text-color);
+}
+/*убрать точки у навигации*/
+.list {
+  list-style: none;
+}
+/*цвет логотипа*/
+.logo {
+  color: var(--title-text-color);
+}
+.logo:hover {
+  color: var(--accent-color);
+}
+/*навигация сайта*/
+.site-nav list {
+}
+.auth-nav list {
+}
+/*цвет при наведении на навигацию*/
+.site-nav .link {
+  color: var(--accent-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--title-text-color);
+}
+.site-nav .link.current {
+  color: var(--title-text-color);
+}
+/*авторизация*/
+/*  КНОПКИ */
+.button {
+  color: var(--title-text-color);
+  background-color: var(--primary-bg-color);
+  font-size: 24px;
+  padding: 12px 24px;
+  display: inline-block;
+  border: 1px solid black;
+}
+.button.primary {
+  color: var(--primary-bg-color);
+  background-color: var(--accent-color);
+  border-color: transparent;
+}
+.button.secondary {
+  color: var(--accent-color);
+  background-color: var(--primary-bg-color);
+  border-color: blue;
+}
+
+/* главная секция в main*/
+
+/*секции в main*/
+.section-title {
+  color: var(--title-text-color);
+}
+/* ul, li, h3, p, a */
+.feature-list .title {
+  color: var(--title-text-color);
+}
+/*.feature-list .link {
+  color: var(--accent-color);
+}*/
