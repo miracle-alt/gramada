@@ -7,14 +7,22 @@
 body {
   background-color: rgb(27, 240, 169);
   color: var(--primary-text-color);
+  font-family: Montserrat, sans-serif;
+  letter-spacing: -0.015em;
+  font-size: 18px;
+  line-height: 1.67;
 }
 /*убрать точки у навигации*/
 .list {
   list-style: none;
 }
-/*цвет логотипа*/
+/*цвет,шрифт логотипа*/
 .logo {
   color: var(--title-text-color);
+  font-family: Comfortaa, cursive;
+  font-size: 28px;
+  line-height: 1.14;
+  text-decoration: none;
 }
 .logo:hover {
   color: var(--accent-color);
@@ -27,6 +35,10 @@ body {
 /*цвет при наведении на навигацию*/
 .site-nav .link {
   color: var(--accent-color);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+  text-decoration: none;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -40,11 +52,15 @@ body {
 .button {
   color: var(--title-text-color);
   background-color: var(--primary-bg-color);
-  font-size: 24px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
   padding: 12px 24px;
   display: inline-block;
   border: 1px solid black;
+  text-decoration: none;
 }
+
 .button.primary {
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
@@ -56,16 +72,42 @@ body {
   border-color: blue;
 }
 
-/* главная секция в main*/
+/* главная секция в main h1*/
+.hero-title {
+  color: var(--title-text-color);
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 1.43;
+  text-align: center;
+}
 
-/*секции в main*/
+/*секции в main h2*/
 .section-title {
   color: var(--title-text-color);
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.5;
+  text-align: center;
 }
-/* ul, li, h3, p, a */
+/* h3 */
 .feature-list .title {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
 }
+/*  p по умолчанию в body
+.feature-list .text {
+  font-size: 18px;
+  line-height: 1.67;
+}*/
 /*.feature-list .link {
   color: var(--accent-color);
 }*/
+/* galereya h3 */
+.work-list .title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+}
