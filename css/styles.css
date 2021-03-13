@@ -42,17 +42,34 @@ body {
   color: var(--accent-color);
 }
 /*навигация сайта*/
-.site-nav list {
+.main-nav {
+  display: flex;
+  align-items: center;
 }
-.auth-nav list {
+.site-nav {
+  display: flex;
+  margin-left: 70px;
+}
+.site-nav .item + .item {
+  margin-left: 20px;
+}
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+.auth-nav .item + .item {
+  margin-left: 12px;
 }
 /*цвет при наведении на навигацию*/
 .site-nav .link {
+  display: block;
   color: var(--accent-color);
   font-weight: 500;
   font-size: 15px;
   line-height: 1.2;
   text-decoration: none;
+  padding-top: 21px;
+  padding-bottom: 21px;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
