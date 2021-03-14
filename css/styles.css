@@ -219,7 +219,6 @@ body {
   text-align: center;
 }
 .client-list {
-  background-color: tomato;
   display: flex;
   flex-wrap: wrap;
   width: 900px;
@@ -236,9 +235,23 @@ body {
   margin-top: 0;
   margin-bottom: 80px;
 }
+
+
+
 .container.loy {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
+.section-description.loy {
+  width: 1000px;
+}
+.auth-nav.list.loy {
+  padding: 11px;
+  
+}
+
+
+
 .footer {
 }
