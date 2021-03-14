@@ -137,7 +137,36 @@ body {
   line-height: 1.5;
   text-align: center;
 }
+/*Альтернатива - отступы между блоками*/
+/* .flex-element:not(:nth-child(3n)) {
+  margin-right: 30px;
+} */
+/* .flex-element:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+} */
+/*или*/
+/* .flex-element {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+}*/
+/* .flex-element:nth-child(3n) {
+  margin-right: 0;
+} */
+/* .flex-element:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+} */
+
 /* h3 */
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -40px -75px;
+}
+.feature-list .item {
+  width: 625px;
+  margin: 40px 75px;
+  background-color: tomato;
+}
 .feature-list .title,
 .work-list .title {
   margin-top: 0;
@@ -161,11 +190,21 @@ body {
 }*/
 /* work-list */
 .work-list .item {
+  display: flex;
+  align-items: center;
   padding-top: 80px;
   padding-bottom: 80px;
 }
 .work-list .item:nth-child(2n) {
+  flex-direction: row-reverse;
   background-color: rgb(39, 228, 48);
+}
+
+.work-list > .item:nth-child(2n + 1) > .content {
+  margin-left: 84px;
+}
+.work-list > .item:nth-child(2n) >.content {
+  margin-right: 84px;
 }
 /* work h3 */
 .work-list .title {
@@ -175,14 +214,31 @@ body {
   line-height: 1.5;
 }
 /* секция партнери */
-.section-title.centered {
+.section-title.centered,
+.section-description.centered {
   text-align: center;
+}
+.client-list {
+  background-color: tomato;
+  display: flex;
+  flex-wrap: wrap;
+  width: 900px;
+  margin: -30px -45px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.client-list li {
+  margin: 30px 45px;
 }
 .section-description {
   font-size: 36px;
   line-height: 1.39;
   margin-top: 0;
   margin-bottom: 80px;
+}
+.container.loy {
+  display: flex;
+  flex-wrap: wrap;
 }
 .footer {
 }
